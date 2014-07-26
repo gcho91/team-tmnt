@@ -15,7 +15,7 @@ bower install --save angular-ui-router#0.2.8-bowratic-tedium
 ```
 
 Note the --save option, which ensures that this version is saved to your bower.json file.
-* Run `grunt bower-install` so that grunt includes the angular-ui-router reference in your html file.
+* Run `grunt bower-install` so that grunt includes the angular-ui-router reference in your html file. (If this doesn't work, continue on).
 * In the index.html file, remove the MainCtrl ng-controller reference and the ng-include reference and include angular-ui-router's ui-view reference. When you're done, it should look like this:
 
 ```
@@ -39,9 +39,9 @@ $urlRouterProvider.otherwise('/');
  * controller: 'MainCtrl',
 * Configure a "team" state with the following:
   * url: '/team/:teamId' 
-  * templateUrl: 'templates/team.html'
+  * templateUrl: 'views/teamview.html'
   * controller: 'TeamCtrl'
-* Setup or create TeamCtrl and TeamView (hint: Yeoman makes this really easy ...)
+* Setup or create a 'Team' controller and a 'teamview' view (hint: Yeoman makes this really easy ...)
 * Ensure that your application works as expected (/ should show the default main view and #/team/1 should show the team template)
 
 ##Step 3: Create a `TurtleService`
