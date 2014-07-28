@@ -45,7 +45,7 @@ $urlRouterProvider.otherwise('/');
 * Ensure that your application works as expected (/ should show the default main view and #/team/1 should show the team template)
 
 ##Step 3: Create a `TurtleService`
-* Use Yeoman to create a TurtleService (*hint*: if you specify `turtle-service` when creating the service, it will automatically camel-case the name for you).
+* Use Yeoman to create a TurtleService (*hint*: if you specify `Turtle-service` when creating the service, it will automatically camel-case the name for you).
 * Create a `getTeams` method on TurtleService that will return the team members. You'll get the team data from a remote server. You'll create a deferred object with a promise that will fetch the data using Angular's $http service and return the results. Here's how we'll do that:
   * Inside the getTeams function, create a deffered object from Angular's `$q.defer()`
 
@@ -83,7 +83,7 @@ resolve: {
 ```
 
 * In the MainCtrl, we need to send the results of the `teams` resolve to the scope. `$scope.teams = teams` (Be sure to specify the teams var as a dependency coming from the router).
-* Now, let's add the hook in the view. Head back over to your main.html view and add an h3 tag that repeats for every team in teams, and spits out an anchor tag with [ui-sref](https://github.com/angular-ui/ui-router/wiki/Quick-Reference#wiki-ui-sref) that points it the link to `#/team/{{team.id}}` and shows the team name.
+* Now, let's add the hook in the view. Head back over to your main.html view and add an h3 tag that repeats for every team in teams, and spits out an anchor tag with [ui-sref](https://github.com/angular-ui/ui-router/wiki/Quick-Reference#wiki-ui-sref) that points the link to `team({teamId: team.id})` and shows the team name.
 * Test your app to make sure the `/` route and the main state are working as expected.
 
 ##Step 4: Add a team state/page
