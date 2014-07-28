@@ -45,7 +45,7 @@ $urlRouterProvider.otherwise('/');
 * Ensure that your application works as expected (/ should show the default main view and #/team/1 should show the team template)
 
 ##Step 3: Create a `TurtleService`
-* Use Yeoman to create a TurtleService (*hint*: if you specify `turtle-service` when creating the service, it will automatically camel-case the name for you).
+* Use Yeoman to create a TurtleService (*hint*: if you specify `Turtle-service` when creating the service, it will automatically camel-case the name for you).
 * Create a `getTeams` method on TurtleService that will return the team members. You'll get the team data from a remote server. You'll create a deferred object with a promise that will fetch the data using Angular's $http service and return the results. Here's how we'll do that:
   * Inside the getTeams function, create a deffered object from Angular's `$q.defer()`
 
