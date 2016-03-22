@@ -112,3 +112,7 @@ resolve:  {
 ##Step 5 (Black Diamond): Make a nested view for each individual character
 * Add a `getCharacter` method for the TurtleService using this url: 'http://tmnt.devmounta.in/character/'+charId
 * Nest a view and create the appropriate state for showing the character information when someone clicks on a character on the team page. Use the [angular-ui-router](https://github.com/angular-ui/ui-router) docs for help.
+
+## Copyright
+
+© DevMountain LLC, 2016. Unauthorized use and/or duplication of this material without express and written permission from DevMountain, LLC is strictly prohibited. Excerpts and links may be used, provided that full and clear credit is given to DevMountain with appropriate and specific direction to the original content.
